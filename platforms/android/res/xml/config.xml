@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.billywong.monifest" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushbotsPlugin">
+        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
+    </feature>
+    <allow-intent href="market:*" />
+    <name>Monifest</name>
+    <description>
+        Monifest app prototype!
+    </description>
+    <author email="billywong118@gmail.com" href="">
+        Monifest
+    </author>
+    <content src="index.html" />
+    <icon src="www/logo.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>
