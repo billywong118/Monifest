@@ -35,7 +35,8 @@ query.find({
 	}
   },
   error: function(error) {
-    alert("Error: " + error.code + " " + error.message);
+    /*alert("Error: " + error.code + " " + error.message);*/
+	  alert("Please make sure you are connected to a stable internet source")
   }
 });
 

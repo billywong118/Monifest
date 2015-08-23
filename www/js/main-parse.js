@@ -22,7 +22,8 @@ function get_balance() {
 		window.localStorage.setItem("Balance", balance);
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});
 	
@@ -74,7 +75,8 @@ function get_goals() {
 		checkdone();
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});
 	
@@ -159,13 +161,15 @@ function delete_goal(to_del) {
 });
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	})
 	
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});}
 	event.preventDefault();
@@ -212,7 +216,8 @@ function create_goal() {
 });
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	})
 		}
@@ -225,7 +230,8 @@ function create_goal() {
 	
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});
 	event.preventDefault();
@@ -269,7 +275,8 @@ function updatePassword() {
 		});
 			},
 			error: function(error) {
-				alert("Error: " + error.code + " " + error.message);
+				/*alert("Error: " + error.code + " " + error.message);*/
+				alert("Please make sure you are connected to a stable internet source")
 			}
 			})
 		}
@@ -292,7 +299,8 @@ function updatePassword() {
 			}
 		},
   error: function(error) {
-    alert("Error: " + error.code + " " + error.message);
+    /*alert("Error: " + error.code + " " + error.message);*/
+	  alert("Please make sure you are connected to a stable internet source")
   }
 });
 	
@@ -356,13 +364,15 @@ function updateAlerts() {
 });
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	})
 	
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});
 	event.preventDefault();
@@ -416,7 +426,8 @@ function get_alerts () {
 		
 	},
 	error: function(error) {
-		alert("Error: " + error.code + " " + error.message);
+		/*alert("Error: " + error.code + " " + error.message);*/
+		alert("Please make sure you are connected to a stable internet source")
 	}
 	});
 }
