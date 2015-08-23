@@ -22,16 +22,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 #checkboxContainer {
   position: relative;
-  /*width: 5.294vw;
-  height: 5.294vw;*/
   height: 18px;
   width: 18px;
+  /*width: 5.294vw;
+  height: 5.294vw;*/
   cursor: pointer;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
-#checkboxContainer.labeled {
+  #checkboxContainer.labeled {
   display: inline-block;
   vertical-align: middle;
 }
@@ -138,10 +138,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   border-style: solid;
   border-top: none;
   border-left: none;
-  /*border-right-width: 0.59vw;
-  border-bottom-width: 0.59vw;*/
   border-right-width: 2px;
   border-bottom-width: 2px;
+  /*border-right-width: 0.59vw;
+  border-bottom-width: 0.59vw;*/
   border-color: white;
 }
 
@@ -172,4 +172,71 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 :host([disabled][checked]) #checkbox {
   background-color: #5a5a5a;
+}
+
+
+@media screen and (min-width: 640px) {
+
+  #checkboxContainer {
+    width: 36px;
+    height: 36px;
+  }
+
+  @keyframes checkmark-expand {
+    0% {
+      top: 9px;
+      left: 6px;
+      /*top: 2.65vw;
+      left: 1.764vw;*/
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      top: -3px;
+      left: 11px;
+      width: 12px;
+      height: 24px;
+    }
+  }
+
+  #checkmark {
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+  }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  #checkboxContainer {
+    width: 67.75px;
+    height: 67.75px;
+  }
+
+
+  @keyframes checkmark-expand {
+    0% {
+      top: 9px;
+      left: 6px;
+      /*top: 2.65vw;
+      left: 1.764vw;*/
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      top: 0px;
+      left: 20px;
+      width: 23.769px;
+      height: 42.7358px;
+    }
+  }
+
+  #checkmark {
+    border-right-width: 7.5px;
+    border-bottom-width: 7.5px;
+  }
+
 }
