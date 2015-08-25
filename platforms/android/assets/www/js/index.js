@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         PushbotsPlugin.initialize("55d8fde3177959020f8b456f", "368581027636");
+        /*Pushbots.sharedInstance().setAlias("our_device");*/
         window.location.href = "welcome.html";
     },
     // Update DOM on a Received Event
